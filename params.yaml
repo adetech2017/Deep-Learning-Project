@@ -1,1 +1,8 @@
-key: value
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3]
+BATCH_SIZE: 16
+INCLUDE_TOP: False
+EPOCHS: 1
+CLASSES: 2 #the class is determin by the number of object
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01
