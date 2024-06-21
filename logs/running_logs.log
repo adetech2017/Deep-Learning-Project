@@ -384,3 +384,46 @@ x==========x]
 [2024-06-21 13:28:41,193 : INFO: main: >>>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-06-21 17:56:47,939 : INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 17:56:47,945 : INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 17:56:47,947 : INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 17:56:47,948 : INFO: common: created directory at: artifacts]
+[2024-06-21 17:56:47,949 : INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 17:56:47,949 : INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1QkhFwEN6Nw-bzCOkd-PnmBUjZCNN9bDB/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-06-21 17:58:14,371 : INFO: data_ingestion: Download data from https://drive.google.com/file/d/1QkhFwEN6Nw-bzCOkd-PnmBUjZCNN9bDB/view?usp=drive_link into artifacts/data_ingestion/data.zip]
+[2024-06-21 17:58:26,151 : INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==============x]
+[2024-06-21 18:11:57,951 : INFO: stage_02_prepare_base_model: *******************]
+[2024-06-21 18:11:57,953 : INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-21 18:11:57,956 : INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 18:11:57,957 : INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 18:11:57,958 : INFO: common: created directory at: artifacts]
+[2024-06-21 18:11:57,958 : INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-21 18:11:58,601 : WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-21 18:11:58,826 : WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-21 18:11:58,991 : INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-21 18:12:07,911 : INFO: stage_03_model_training: **********************]
+[2024-06-21 18:12:07,912 : INFO: stage_03_model_training: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-21 18:12:07,914 : INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 18:12:07,915 : INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 18:12:07,916 : INFO: common: created directory at: artifacts]
+[2024-06-21 18:12:07,916 : INFO: common: created directory at: artifacts/training]
+[2024-06-21 18:12:08,289 : WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-21 18:36:36,360 : WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-21 18:36:36,833 : INFO: stage_03_model_training: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-21 18:37:07,675 : INFO: stage_04_model_evaluation: **********************]
+[2024-06-21 18:37:07,675 : INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<<]
+[2024-06-21 18:37:07,683 : INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 18:37:07,687 : INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 18:37:07,688 : INFO: common: created directory at: artifacts]
+[2024-06-21 18:37:08,595 : WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-21 18:44:03,700 : INFO: common: json file saved at: scores.json]
+[2024-06-21 18:44:03,701 : INFO: common: json file saved at: scores.json]
+[2024-06-21 18:44:03,701 : INFO: stage_04_model_evaluation: >>>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
